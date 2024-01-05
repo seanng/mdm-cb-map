@@ -18,32 +18,32 @@ async function getForexRates(): Promise<Rate[]> {
 
   return [
     {
-      flag: '/images/timezone/us.png',
+      flag: '/timezone/us.png',
       currency: 'USD',
       rate: 1 / data.rates.USD,
     },
     {
-      flag: '/images/timezone/cn.png',
+      flag: '/timezone/cn.png',
       currency: 'RMB',
       rate: 1 / data.rates.CNY,
     },
     {
-      flag: '/images/timezone/uk.png',
+      flag: '/timezone/uk.png',
       currency: 'GBP',
       rate: 1 / data.rates.GBP,
     },
     {
-      flag: '/images/timezone/eu.png',
+      flag: '/timezone/eu.png',
       currency: 'EUR',
       rate: 1 / data.rates.EUR,
     },
     {
-      flag: '/images/timezone/jp.png',
+      flag: '/timezone/jp.png',
       currency: 'JPY',
       rate: 1 / data.rates.JPY,
     },
     {
-      flag: '/images/timezone/ca.png',
+      flag: '/timezone/ca.png',
       currency: 'CAD',
       rate: 1 / data.rates.CAD,
     },

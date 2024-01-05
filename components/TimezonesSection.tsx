@@ -11,37 +11,37 @@ dayjs.extend(timezone)
 
 const timezones = [
   {
-    flag: '/images/timezone/tw.png',
+    flag: '/timezone/tw.png',
     title: '台北',
     timeZone: 'Asia/Taipei',
     fromUtc: 'GMT+8',
   },
   {
-    flag: '/images/timezone/us.png',
+    flag: '/timezone/us.png',
     title: '美東',
     timeZone: 'America/New_York',
     fromUtc: 'GMT-5',
   },
   {
-    flag: '/images/timezone/us.png',
+    flag: '/timezone/us.png',
     title: '美西',
     timeZone: 'America/Los_Angeles',
     fromUtc: 'GMT-8',
   },
   {
-    flag: '/images/timezone/uk.png',
+    flag: '/timezone/uk.png',
     title: '倫敦',
     timeZone: 'Europe/London',
     fromUtc: 'GMT+0',
   },
   {
-    flag: '/images/timezone/fr.png',
+    flag: '/timezone/fr.png',
     title: '巴黎',
     timeZone: 'Europe/Paris',
     fromUtc: 'GMT+1',
   },
   {
-    flag: '/images/timezone/jp.png',
+    flag: '/timezone/jp.png',
     title: '東京',
     timeZone: 'Asia/Tokyo',
     fromUtc: 'GMT+9',
