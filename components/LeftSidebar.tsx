@@ -10,6 +10,10 @@ interface Props {
   }>
 }
 
+/**
+ * This component contains the "floating left sidebar". 
+ * The useSidebar hook is used to determine which module of the page is currently being viewed.
+ */
 export function LeftSidebar({ data }: Props) {
   const { currentNavIdx } = useSidebar()
 

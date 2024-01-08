@@ -13,6 +13,7 @@ export function HomePagePreview({
   token: null | string
   children: ReactNode
 }) {
+  // Fetch DRAFT data to render on the page - that is data that is being edited in real-time.
   const data: HomePagePayload = usePreview(token, homePageQuery)
   return <HomePage data={data}>{children}</HomePage>
 }

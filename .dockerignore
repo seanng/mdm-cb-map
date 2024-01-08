@@ -1,0 +1,6 @@
+.next
+.husky
+node_modules
+Dockerfile
+.DS_Store
+README.md

@@ -22,6 +22,9 @@ interface HomePageProps {
   children?: ReactNode
 }
 
+/**
+ * This is the meat of the app. It renders the entire page and organizes the modules.
+ */
 export function HomePage({ data, children }: HomePageProps) {
   const {
     home: { modules },
@@ -34,6 +37,10 @@ export function HomePage({ data, children }: HomePageProps) {
     _key,
   }))
 
+  /** 
+   * Since the News and Events sections are special modules that do not follow the same structure as the other modules,
+   * they are added to the sidebar separately. Their placements are specific to the design specs of my partner.
+   */
   const sidebarModules = [
     ...sidebarTabbedModules.slice(0, 2),
     {
@@ -47,6 +54,7 @@ export function HomePage({ data, children }: HomePageProps) {
     ...sidebarTabbedModules.slice(2),
   ]
 
+  // The modules are organized in a specific order in accordance to rigid design specs.
   return (
     <>
       <SidebarProvider>

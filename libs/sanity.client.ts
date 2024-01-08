@@ -2,12 +2,7 @@ import 'server-only'
 import { createClient } from 'next-sanity'
 
 import { apiVersion, dataset, projectId } from 'libs/sanity.api'
-import {
-  homePageQuery,
-  postAndMorePostsQuery,
-  postBySlugQuery,
-  postSlugsQuery,
-} from './sanity.queries'
+import { homePageQuery } from './sanity.queries'
 
 /**
  * Checks if it's safe to create a client instance, as `@sanity/client` will throw an error if `projectId` is false
