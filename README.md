@@ -1,16 +1,21 @@
 # CB-Map (MDM Work Sample)
 
-A directory of useful tools for cross-border e-commerce specialists in Taiwan. I have deployed a clone of the original project [over here](https://mdm-cb-map.vercel.app/). The application is written with TypeScript. It is built on [Next.js 13](https://nextjs.org/docs) and uses [Sanity.io](https://www.sanity.io/) to manage the site's contents. 
+A directory of useful tools for cross-border e-commerce specialists in Taiwan. I have deployed a clone of the original project [over here](https://mdm-cb-map.vercel.app/). The application is written with TypeScript. It is built on [Next.js 13](https://nextjs.org/docs) and uses [Sanity.io](https://www.sanity.io/) to manage the site's contents.
 
 ## Orienting the code
 
 The app follows the [Next.js 13 App Router folder structure](https://nextjs.org/docs/getting-started/project-structure). I have started documenting the code from the `app/(site)/(home)/page.tsx` file.
 
+Although much of the CMS UI rendering is handled by the NextStudio component (as seen in `app/studio/[[...index]]/page.tsx`), the custom configurations can be found in the `sanity.config.ts` file. Other notable CMS-related files include:
+
+- `schemas/index.ts`
+- `plugins/settings.tsx`
+
 ## Running locally
 
 ### Without Docker
 
-1. If you wish to run the application locally, make sure you have Node (v19+) and Yarn installed. 
+1. If you wish to run the application locally, make sure you have Node (v19+) and Yarn installed.
 2. Copy the ENV variables from `Dockerfile` to a new `.env.local` file.
 3. Then run `yarn install && yarn dev`.
 4. Open [http://localhost:3000](http://localhost:3000) to see the result.
